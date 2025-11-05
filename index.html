@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fit With Sachin</title>
+  <meta name="description" content="Personal training and nutrition coaching." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115; --card:#151922; --muted:#a9b1c7; --text:#e8edf9; --primary:#5dd6a3; --accent:#6aa8ff;
+      --radius:16px; --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(6px);background:rgba(15,17,21,.6);border-bottom:1px solid #232838;z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.2px}
+    nav .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--primary)}
+    nav .links a{margin-left:18px;color:var(--muted)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:600;background:var(--primary);color:#0b0d11;transition:.2s}
+    .btn:hover{opacity:.9;transform:translateY(-1px)}
+    .btn.secondary{background:#232838;color:var(--text);border:1px solid #2f3550}
+    /* Hero */
+    .hero{padding:72px 0 36px}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .kicker{color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.85rem}
+    h1{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:.3em 0}
+    .lead{color:var(--muted);font-size:1.05rem}
+    .hero .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:linear-gradient(180deg,#171c27,#121520);border:1px solid #232838;border-radius:var(--radius);padding:18px}
+    .hero .photo{border-radius:var(--radius);overflow:hidden}
+    /* Sections */
+    section{padding:60px 0;border-top:1px solid #1c2130}
+    h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #2a3148;border-radius:999px;color:var(--muted);font-size:.9rem}
+    .price{font-size:2rem;font-weight:800}
+    .check{color:var(--primary);font-weight:700}
+    video{width:100%;height:auto;border-radius:12px;border:1px solid #232838;background:#0b0d11}
+    /* Testimonials */
+    .quote{font-style:italic;color:#dfe6fb}
+    /* Contact */
+    form{display:grid;gap:12px}
+    input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;background:#0f1320;border:1px solid #293050;color:var(--text)}
+    textarea{min-height:120px;resize:vertical}
+    footer{padding:40px 0;color:var(--muted)}
+    .notice{font-size:.85rem;color:#8c95ae}
+    /* Responsive */
+    @media (max-width:900px){
+      .hero .wrap{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span>Fit With Sachin</div>
+        <div class="links">
+          <a href="#programs">Programs</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#videos">Videos</a>
+          <a href="#contact" class="btn secondary">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <div class="kicker">Personal training • Nutrition • Accountability</div>
+          <h1>Get strong, stay consistent, and feel great—online or in person.</h1>
+          <p class="lead">Custom plans, form checks, and weekly check-ins designed around your schedule. Beginner friendly. No fad diets.</p>
+          <div class="cta">
+            <a href="https://wa.me/919990243734" class="btn">WhatsApp: +91 99902 43734</a>
+            <a href="https://www.youtube.com/@getfitwithsachin" class="btn secondary" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <div style="margin-top:16px" class="muted notice">⚡ Average clients see measurable progress in 6–8 weeks with 3 sessions/week.</div>
+        </div>
+        <div class="photo card">
+          <!-- Replace with your image -->
+          <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?q=80&w=1600&auto=format&fit=crop" alt="Personal trainer with client">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Hi, I’m Sachin.</h2>
+          <p class="muted">NASM-CPT · Nutrition Coach · 5+ years coaching.</p>
+          <p>I help busy students and professionals build strength and healthy habits without extreme diets. We’ll focus on form, progressive overload, and sustainable nutrition.</p>
+          <div class="pill">✅ Form checks • 📈 Weekly progress • 🥗 Simple nutrition</div>
+        </div>
+        <div class="card">
+          <h2>What you get</h2>
+          <ul>
+            <li><span class="check">✓</span> Personalized training plan (home or gym)</li>
+            <li><span class="check">✓</span> Video form feedback</li>
+            <li><span class="check">✓</span> Habit & step goals</li>
+            <li><span class="check">✓</span> WhatsApp support, 6 days/week</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs">
+      <div class="container">
+        <h2>Programs</h2>
+        <p class="muted">Choose the format that fits your lifestyle.</p>
+        <div class="grid-3" style="margin-top:14px">
+          <div class="card">
+            <h3>Kickstart (4 weeks)</h3>
+            <p class="muted">Perfect reset: simple plan, habits, and accountability.</p>
+            <ul>
+              <li><span class="check">✓</span> 3 sessions/week</li>
+              <li><span class="check">✓</span> Macro guide</li>
+              <li><span class="check">✓</span> Weekly check-ins</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Strength Builder (12 weeks)</h3>
+            <p class="muted">Progressive training for sustainable strength & physique.</p>
+            <ul>
+              <li><span class="check">✓</span> 4 sessions/week</li>
+              <li><span class="check">✓</span> Form checks</li>
+              <li><span class="check">✓</span> Habit coaching</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>1:1 Coaching (ongoing)</h3>
+            <p class="muted">Fully custom coaching with direct support.</p>
+            <ul>
+              <li><span class="check">✓</span> Custom split</li>
+              <li><span class="check">✓</span> Weekly calls</li>
+              <li><span class="check">✓</span> Priority chat support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING (updated per your request) -->
+    <section id="pricing">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Gym session</h2>
+          <div class="price">₹1,000</div>
+          <p class="muted">Per session at gym</p>
+          <a class="btn" href="https://wa.me/919990243734">Book on WhatsApp</a>
+        </div>
+        <div class="card">
+          <h2>Home gym session</h2>
+          <div class="price">₹1,500</div>
+          <p class="muted">Per class (home gym)</p>
+          <a class="btn" href="https://wa.me/919990243734">Book on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos">
+      <div class="container">
+        <h2>Videos</h2>
+        <p class="muted">Watch a few clips. For more, visit our YouTube channel.</p>
+        <div class="grid-auto" style="margin-top:14px">
+          <figure class="card"><video controls preload="metadata" src="videos/WhatsApp Video 2025-11-05 at 12.45.51.mp4"></video>
+    <figcaption class="muted" style="margin-top:8px">WhatsApp Video 2025-11-05 at 12.45.51.mp4</figcaption></figure>
+<figure class="card"><video controls preload="metadata" src="videos/WhatsApp Video 2025-11-05 at 12.46.03.mp4"></video>
+    <figcaption class="muted" style="margin-top:8px">WhatsApp Video 2025-11-05 at 12.46.03.mp4</figcaption></figure>
+<figure class="card"><video controls preload="metadata" src="videos/WhatsApp Video 2025-10-13 at 17.16.24.mp4"></video>
+    <figcaption class="muted" style="margin-top:8px">WhatsApp Video 2025-10-13 at 17.16.24.mp4</figcaption></figure>
+        </div>
+        <div style="margin-top:16px">
+          <a class="btn" href="https://www.youtube.com/@getfitwithsachin" target="_blank" rel="noopener">Visit YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="muted">Call/WhatsApp or send a message.</p>
+          <p><strong>Phone:</strong> <a href="tel:+919990243734">+91 99902 43734</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/919990243734">+91 99902 43734</a></p>
+          <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@getfitwithsachin" target="_blank" rel="noopener">@getfitwithsachin</a></p>
+          <form onsubmit="event.preventDefault(); alert('Thanks! I will get back to you shortly.');" style="margin-top:8px">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <select name="goal" required>
+              <option value="">Primary goal</option>
+              <option>Lose fat</option>
+              <option>Build muscle</option>
+              <option>Improve mobility</option>
+              <option>General fitness</option>
+            </select>
+            <textarea name="message" placeholder="Tell me a bit about your current routine"></textarea>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="card">
+          <h2>Location & Hours</h2>
+          <p class="muted">Delhi NCR • Online worldwide</p>
+          <ul>
+            <li>Mon–Sat: 7am–9pm IST</li>
+            <li>Sun: by appointment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>&copy; <span id="year"></span> Fit With Sachin. All rights reserved.</div>
+      <div class="notice">This is a demo template. Replace images and text with your own content and policies.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
