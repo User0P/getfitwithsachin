@@ -8,10 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0f1115; --card:#151922; --muted:#a9b1c7; --text:#e8edf9; --primary:#5dd6a3; --accent:#6aa8ff;
-      --radius:16px; --max:1100px;
-    }
+    :root{--bg:#0f1115;--card:#151922;--muted:#a9b1c7;--text:#e8edf9;--primary:#5dd6a3;--accent:#6aa8ff;--radius:16px;--max:1100px}
     *{box-sizing:border-box}
     html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
     a{color:var(--accent);text-decoration:none}
@@ -25,7 +22,6 @@
     .btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:600;background:var(--primary);color:#0b0d11;transition:.2s}
     .btn:hover{opacity:.9;transform:translateY(-1px)}
     .btn.secondary{background:#232838;color:var(--text);border:1px solid #2f3550}
-    /* Hero */
     .hero{padding:72px 0 36px}
     .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
     .kicker{color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.85rem}
@@ -34,7 +30,6 @@
     .hero .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
     .card{background:linear-gradient(180deg,#171c27,#121520);border:1px solid #232838;border-radius:var(--radius);padding:18px}
     .hero .photo{border-radius:var(--radius);overflow:hidden}
-    /* Sections */
     section{padding:60px 0;border-top:1px solid #1c2130}
     h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin:0 0 12px}
     .muted{color:var(--muted)}
@@ -42,17 +37,13 @@
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
     .ig-wrapper{background:linear-gradient(180deg,#171c27,#121520);border:1px solid #232838;border-radius:16px;padding:8px}
-    .ig-wrapper blockquote{margin:auto !important; max-width:540px; width:100% !important; background:transparent; border:0; box-shadow:none}
+    .ig-wrapper blockquote{margin:auto !important;max-width:540px;width:100% !important;background:transparent;border:0;box-shadow:none}
     form{display:grid;gap:12px}
     input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;background:#0f1320;border:1px solid #293050;color:var(--text)}
     textarea{min-height:120px;resize:vertical}
     footer{padding:40px 0;color:var(--muted)}
     .notice{font-size:.85rem;color:#8c95ae}
-    @media (max-width:900px){
-      .hero .wrap{grid-template-columns:1fr}
-      .grid-3{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-    }
+    @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -79,12 +70,12 @@
           <p class="lead">Custom plans, form checks, and weekly check-ins designed around your schedule. Beginner friendly. No fad diets.</p>
           <div class="cta">
             <a href="https://wa.me/919990243734" class="btn">WhatsApp: +91 99902 43734</a>
-            <a href="https://www.youtube.com/@getfitwithsachin" class="btn secondary" target="_blank" rel="noopener">YouTube</a>
+            <a href="mailto:Sachin.jadopath@gmail.com" class="btn secondary">Email</a>
           </div>
           <div style="margin-top:16px" class="muted notice">⚡ Average clients see measurable progress in 6–8 weeks with 3 sessions/week.</div>
         </div>
         <div class="photo card">
-          <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?q=80&w=1600&auto=format&fit=crop" alt="Personal trainer with client">
+          <img src="images/hero.jpg" alt="Sachin - personal trainer">
         </div>
       </div>
     </section>
@@ -111,7 +102,7 @@
         <h2>Highlights</h2>
         <p class="muted">Recent clips from Instagram.</p>
         <div class="ig-grid" style="margin-top:14px">
-          <div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQlhwGBAX2q/" data-instgrm-version="14" style="width:100%;"></blockquote></div><div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQfuOUbAaED/" data-instgrm-version="14" style="width:100%;"></blockquote></div><div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNscnqLwmXI/" data-instgrm-version="14" style="width:100%;"></blockquote></div>
+          <div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQlhwGBAX2q/" data-instgrm-version="14" style="width:100%;"></blockquote><p class="muted" style="text-align:center;margin-top:6px"><a href="https://www.instagram.com/p/DQlhwGBAX2q/" target="_blank" rel="noopener">View on Instagram</a></p></div><div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQfuOUbAaED/" data-instgrm-version="14" style="width:100%;"></blockquote><p class="muted" style="text-align:center;margin-top:6px"><a href="https://www.instagram.com/p/DQfuOUbAaED/" target="_blank" rel="noopener">View on Instagram</a></p></div><div class="ig-wrapper"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNscnqLwmXI/" data-instgrm-version="14" style="width:100%;"></blockquote><p class="muted" style="text-align:center;margin-top:6px"><a href="https://www.instagram.com/p/DNscnqLwmXI/" target="_blank" rel="noopener">View on Instagram</a></p></div>
         </div>
       </div>
     </section>
@@ -121,22 +112,23 @@
         <div class="card">
           <h2>Contact</h2>
           <p class="muted">Call/WhatsApp or send a message.</p>
+          <p><strong>Email:</strong> <a href="mailto:Sachin.jadopath@gmail.com">Sachin.jadopath@gmail.com</a></p>
           <p><strong>Phone:</strong> <a href="tel:+919990243734">+91 99902 43734</a></p>
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/919990243734">+91 99902 43734</a></p>
-          <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@getfitwithsachin" target="_blank" rel="noopener">@getfitwithsachin</a></p>
-          <form onsubmit="event.preventDefault(); alert('Thanks! I will get back to you shortly.');" style="margin-top:8px">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Email address" required>
-            <select name="goal" required>
+          <form action="mailto:Sachin.jadopath@gmail.com" method="post" enctype="text/plain" style="margin-top:8px">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="Email" placeholder="Email address" required>
+            <select name="Goal" required>
               <option value="">Primary goal</option>
               <option>Lose fat</option>
               <option>Build muscle</option>
               <option>Improve mobility</option>
               <option>General fitness</option>
             </select>
-            <textarea name="message" placeholder="Tell me a bit about your current routine"></textarea>
-            <button class="btn" type="submit">Submit</button>
+            <textarea name="Message" placeholder="Tell me a bit about your current routine"></textarea>
+            <button class="btn" type="submit">Send Email</button>
           </form>
+          <p class="notice">Prefer WhatsApp? <a href="https://wa.me/919990243734">Tap here</a>.</p>
         </div>
         <div class="card">
           <h2>Location & Hours</h2>
@@ -145,6 +137,7 @@
             <li>Mon–Sat: 7am–9pm IST</li>
             <li>Sun: by appointment</li>
           </ul>
+          <p style="margin-top:10px"><a class="btn" href="https://maps.app.goo.gl/H1oTRQf9J82sbCzP6" target="_blank" rel="noopener">Find us on Maps</a></p>
         </div>
       </div>
     </section>
